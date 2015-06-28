@@ -1,3 +1,5 @@
+#!/bin/bash
+
 import yaml
 import urllib
 import urlparse
@@ -112,10 +114,11 @@ for src, dst in config['sourcemod']['configs']:
 
 os.mkdir('build/cfg')
 
-for cfg in config['configs']:
-    f = os.path.join('cfg', cfg)
+for src, dst in config['configs']:
+    f = os.path.join('cfg', src)
     if os.path.exists(f):
+        mkdir(os.path.join('build/cfg/', dst))
         if os.path.isdir(f):
-            shutil.copytree(f, os.path.join('build/cfg/', cfg))
+            shutil.copytree(f, os.path.join('build/cfg/', dst))
         else:
-            shutil.copy(f, os.path.join('build/cfg/', cfg))
+            shutil.copy(f, os.path.join('build/cfg/', dst))

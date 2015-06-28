@@ -30,6 +30,7 @@ sourcemod:
         - reservedslots
         - sounds
         - SourceIRC
+        - afk_manager
     configs: [
         ['geoip', 'geoip'],
         ['admin_groups.cfg', 'admin_groups.cfg'],
@@ -55,5 +56,7 @@ metamod:
     update:
         - addons/
 
-configs:
-    sourcemod: sourcemod
+configs: [
+    ['sourcemod/afk_manager.cfg', 'sourcemod/afk_manager.cfg'],
+    ['sourcemod/sourcemod.cfg', 'sourcemod/sourcemod.cfg']
+]
