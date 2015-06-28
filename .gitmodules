@@ -4,3 +4,6 @@
 [submodule "sourcemod_plugins/SourcePunish"]
 	path = sourcemod_plugins/SourcePunish
 	url = https://github.com/Krenair/SourcePunish.git
+[submodule "sourcemod_plugins/TF2-Premium"]
+	path = sourcemod_plugins/TF2-Premium
+	url = https://github.com/Azelphur/TF2-Premium.git
