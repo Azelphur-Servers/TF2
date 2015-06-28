@@ -102,7 +102,7 @@ os.mkdir('build/addons/sourcemod/configs')
 for src, dst in config['sourcemod']['configs']:
     f = os.path.join('sourcemod_configs', src)
     if os.path.exists(f):
-        os.rename(f, os.path.join('build/addons/sourcemod/configs/', dst))
+        shutil.copy(f, os.path.join('build/addons/sourcemod/configs/', dst))
         continue
 
     f = os.path.join('sourcemod/addons/sourcemod/configs', src)
