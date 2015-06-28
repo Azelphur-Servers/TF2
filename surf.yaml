@@ -47,7 +47,8 @@ sourcemod:
         ['databases.cfg', 'databases.cfg'],
         ['languages.cfg', 'languages.cfg'],
         ['maplists.cfg', 'maplists.cfg'],
-        ['sourceirc_surf.cfg', 'sourceirc.cfg']
+        ['sourceirc_surf.cfg', 'sourceirc.cfg'],
+        ['sourcepunish_surf.cfg', 'sourcepunish.cfg']
     ]
     extensions:
         - socket
@@ -59,6 +60,5 @@ metamod:
 
 configs: [
     ['sourcemod/afk_manager.cfg', 'sourcemod/afk_manager.cfg'],
-    ['sourcemod/sourcemod.cfg', 'sourcemod/sourcemod.cfg'],
-    ['sourcemod/sourcepunish_surf.cfg', 'sourcemod/sourcepunish.cfg']
+    ['sourcemod/sourcemod.cfg', 'sourcemod/sourcemod.cfg']
 ]
