@@ -1,0 +1,48 @@
+"Advertisements"
+{
+    "1"
+    {
+        "type"        "H"
+        "text"        "Type !radio to listen to music!"
+    }
+    "2"
+    {
+        "type"        "H"
+        "text"        "Welcome to Surf.TF2.Azelphur.com, add us to your favorites!"
+    }
+    "3"
+    {
+        "type"        "H"
+        "text"        "Visit our website, Game.Azelphur.com and have a look around!"
+    }
+    "4"
+    {
+        "type"        "H"
+        "text"        "Wanna change map? Type nominate to select a map you like, then type rtv."
+    }
+    "5"
+    {
+        "type"        "H"
+        "text"        "Want cool premium benefits including Vote map and Reserved Slot? type donate."
+    }
+    "6"
+    {
+        "type"        "H"
+        "text"        "Want to know the rules?, type !rules."
+    }
+    "7"
+    {
+        "type"        "H"
+        "text"        "Is someone breaking the rules?. Type /report."
+    }
+    "8"
+    {
+        "type"        "H"
+        "text"        "Want to know how to surf? type !howtosurf."
+    }
+    "9"
+    {
+        "type"        "H"
+        "text"        "Type !hop in chat to check out our other servers!"
+    }
+}
