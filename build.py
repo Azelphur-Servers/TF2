@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/python
 
 import yaml
 import urllib
@@ -18,6 +18,23 @@ def do_update(thing):
     for path in config[thing]['update']:
         mkdir(os.path.abspath(os.path.join('build', path)))
         os.rename(os.path.join(thing, path), os.path.join('build', path))
+
+def sourcemod_build(f):
+    print 'Building', f
+    spcomp = os.path.abspath('./sourcemod/addons/sourcemod/scripting/spcomp')
+    sp = os.path.abspath(f)
+    origWD = os.getcwd()
+    os.chdir('build/addons/sourcemod/plugins/')
+    r = subprocess.call(
+        [
+            spcomp,
+            sp
+        ],
+    )
+    if r:
+        print 'Failed to compile, aborting'
+        exit()
+    os.chdir(origWD)
 
 with open('surf.yaml', 'r') as stream:
     config = yaml.load(stream)
@@ -74,21 +91,10 @@ for plugin in config['sourcemod']['plugins']:
         for root, dirs, files in os.walk(os.path.join(f, 'scripting')):
             for name in files:
                 if name[-3:] == '.sp':
-                    print 'Building', os.path.join(root, name)
-                    spcomp = os.path.abspath('./sourcemod/addons/sourcemod/scripting/spcomp')
-                    sp = os.path.abspath(os.path.join(root, name))
-                    origWD = os.getcwd()
-                    os.chdir('build/addons/sourcemod/plugins/')
-                    r = subprocess.call(
-                        [
-                            spcomp,
-                            sp
-                        ],
-                    )
-                    if r:
-                        print 'Failed to compile, aborting'
-                        exit()
-                    os.chdir(origWD)
+                    sourcemod_build(os.path.join(root, name))
+
+    if os.path.exists(f+'.sp') and os.path.isfile(f+'.sp'):
+        sourcemod_build(f+'.sp')
 
 for extension in config['sourcemod']['extensions']:
     f = os.path.join('sourcemod_extensions/', extension)
