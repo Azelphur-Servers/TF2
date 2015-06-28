@@ -31,6 +31,7 @@ sourcemod:
         - sounds
         - SourceIRC
         - afk_manager
+        - SourcePunish
     configs: [
         ['geoip', 'geoip'],
         ['admin_groups.cfg', 'admin_groups.cfg'],
@@ -58,5 +59,6 @@ metamod:
 
 configs: [
     ['sourcemod/afk_manager.cfg', 'sourcemod/afk_manager.cfg'],
-    ['sourcemod/sourcemod.cfg', 'sourcemod/sourcemod.cfg']
+    ['sourcemod/sourcemod.cfg', 'sourcemod/sourcemod.cfg'],
+    ['sourcemod/sourcepunish_surf.cfg', 'sourcemod/sourcepunish.cfg']
 ]
