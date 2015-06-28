@@ -32,6 +32,10 @@ sourcemod:
         - SourceIRC
         - afk_manager
         - SourcePunish
+        - addcond
+        - advertisements
+        - buttons
+        - hlstats
     configs: [
         ['geoip', 'geoip'],
         ['admin_groups.cfg', 'admin_groups.cfg'],
@@ -48,7 +52,8 @@ sourcemod:
         ['languages.cfg', 'languages.cfg'],
         ['maplists.cfg', 'maplists.cfg'],
         ['sourceirc_surf.cfg', 'sourceirc.cfg'],
-        ['sourcepunish_surf.cfg', 'sourcepunish.cfg']
+        ['sourcepunish_surf.cfg', 'sourcepunish.cfg'],
+        ['advertisements_surf.txt', 'advertisements.txt']
     ]
     extensions:
         - socket
