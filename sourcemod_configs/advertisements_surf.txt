@@ -3,7 +3,7 @@
     "1"
     {
         "type"        "H"
-        "text"        "Type !radio to listen to music!"
+        "text"        "Type !radio in chat to listen to music!"
     }
     "2"
     {
@@ -13,32 +13,32 @@
     "3"
     {
         "type"        "H"
-        "text"        "Visit our website, Game.Azelphur.com and have a look around!"
+        "text"        "Visit our website, Game.Azelphur.com, and have a look around!"
     }
     "4"
     {
         "type"        "H"
-        "text"        "Wanna change map? Type nominate to select a map you like, then type rtv."
+        "text"        "Wanna change the map? Type nominate in chat to select a map you like, then type rtv."
     }
     "5"
     {
         "type"        "H"
-        "text"        "Want cool premium benefits including Vote map and Reserved Slot? type donate."
+        "text"        "Want cool premium benefits like being able to force a map vote, and a reserved slot? Type donate in chat to support us."
     }
     "6"
     {
         "type"        "H"
-        "text"        "Want to know the rules?, type !rules."
+        "text"        "Want to know the rules here? Type !rules."
     }
     "7"
     {
         "type"        "H"
-        "text"        "Is someone breaking the rules?. Type /report."
+        "text"        "Is someone breaking the rules? Type /report to send the admins a report."
     }
     "8"
     {
         "type"        "H"
-        "text"        "Want to know how to surf? type !howtosurf."
+        "text"        "Want to know how to surf? Type !howtosurf in chat for some tips and tricks!"
     }
     "9"
     {
