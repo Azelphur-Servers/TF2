@@ -44,6 +44,14 @@ for root, dirs, files in os.walk('sourcemod_plugins'):
                 'sourcemod/addons/sourcemod/scripting/include'
             )
 
+for root, dirs, files in os.walk('sourcemod_extensions'):
+    for name in files:
+        if name[-4:] == '.inc':
+            shutil.copy(
+                os.path.join(root, name),
+                'sourcemod/addons/sourcemod/scripting/include'
+            )
+
 for plugin in config['sourcemod']['plugins']:
     f = os.path.join('sourcemod/addons/sourcemod/plugins', plugin+'.smx')
     if os.path.exists(f):
@@ -55,6 +63,12 @@ for plugin in config['sourcemod']['plugins']:
 
     f = os.path.join('sourcemod_plugins/', plugin)
     if os.path.exists(f) and os.path.isdir(f):
+        if os.path.exists(os.path.join(f, 'translations')):
+            for t in os.listdir(os.path.join(f, 'translations')):
+                shutil.copy(
+                    os.path.join(f, 'translations', t),
+                    os.path.join('build/addons/sourcemod/translations/', t)
+                )
         for root, dirs, files in os.walk(os.path.join(f, 'scripting')):
             for name in files:
                 if name[-3:] == '.sp':
@@ -63,20 +77,38 @@ for plugin in config['sourcemod']['plugins']:
                     sp = os.path.abspath(os.path.join(root, name))
                     origWD = os.getcwd()
                     os.chdir('build/addons/sourcemod/plugins/')
-                    subprocess.call(
+                    r = subprocess.call(
                         [
                             spcomp,
                             sp
                         ],
                     )
+                    if r:
+                        print 'Failed to compile, aborting'
+                        exit()
                     os.chdir(origWD)
+
+for extension in config['sourcemod']['extensions']:
+    f = os.path.join('sourcemod_extensions/', extension)
+    if os.path.exists(f) and os.path.isdir(f):
+        for e in os.listdir(os.path.join(f, 'extensions')):
+            shutil.copy(
+                os.path.join(f, 'extensions', e),
+                os.path.join('build/addons/sourcemod/extensions/', e)
+            )
 
 os.mkdir('build/addons/sourcemod/configs')
 
-for cfg in config['sourcemod']['configs']:
-    f = os.path.join('sourcemod/addons/sourcemod/configs', cfg)
+for src, dst in config['sourcemod']['configs']:
+    f = os.path.join('sourcemod_configs', src)
     if os.path.exists(f):
-        os.rename(f, os.path.join('build/addons/sourcemod/configs/', cfg))
+        os.rename(f, os.path.join('build/addons/sourcemod/configs/', dst))
+        continue
+
+    f = os.path.join('sourcemod/addons/sourcemod/configs', src)
+    if os.path.exists(f):
+        os.rename(f, os.path.join('build/addons/sourcemod/configs/', dst))
+
 
 os.mkdir('build/cfg')
 
