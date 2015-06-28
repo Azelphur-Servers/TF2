@@ -1,0 +1,54 @@
+sourcemod:
+    url: http://www.sourcemod.net/smdrop/1.8/sourcemod-1.8.0-git5483-linux.tar.gz
+    remove:
+        - addons/metamod/sourcemod.vdf
+        - addons/sourcemod/scripting
+        - addons/sourcemod/plugins
+        - addons/sourcemod/configs
+    update:
+        - addons/sourcemod/bin
+        - addons/sourcemod/extensions
+        - addons/sourcemod/gamedata
+        - addons/sourcemod/translations
+    plugins:
+        - admin-sql-prefetch
+        - sql-admin-manager
+        - adminhelp
+        - adminmenu
+        - antiflood
+        - basebans
+        - basechat
+        - basecomm
+        - basecommands
+        - basetriggers
+        - basevotes
+        - clientprefs
+        - funcommands
+        - funvotes
+        - nextmap
+        - playercommands
+        - reservedslots
+        - sounds
+    configs:
+        - geoip
+        - admin_groups.cfg
+        - admin_levels.cfg
+        - adminmenu_cfgs.txt
+        - adminmenu_custom.txt
+        - adminmenu_grouping.txt
+        - adminmenu_sorting.cfg
+        - admin_overrides.cfg
+        - admins.cfg
+        - banreasons.txt
+        - core.cfg
+        - databases.cfg
+        - languages.cfg
+        - maplists.cfg
+
+metamod:
+    url: http://www.metamodsource.net/mmsdrop/1.11/mmsource-1.11.0-git985-linux.tar.gz
+    update:
+        - addons/
+
+configs:
+    sourcemod: sourcemod
