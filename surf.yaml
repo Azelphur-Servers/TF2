@@ -36,6 +36,8 @@ sourcemod:
         - advertisements
         - buttons
         - hlstats
+        - psyrtd-generic-effects
+        - psyrtd-tf2-effects
     configs: [
         ['geoip', 'geoip'],
         ['admin_groups.cfg', 'admin_groups.cfg'],
