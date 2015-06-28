@@ -1,0 +1,3 @@
+[submodule "sourcemod_plugins/SourceIRC"]
+	path = sourcemod_plugins/SourceIRC
+	url = https://github.com/Azelphur/SourceIRC.git
