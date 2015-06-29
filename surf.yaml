@@ -36,8 +36,9 @@ sourcemod:
         - advertisements
         - buttons
         - hlstats
-        - psyrtd-generic-effects
-        - psyrtd-tf2-effects
+        - psyrtd
+        - TF2-Premium
+        - serverhop
     configs: [
         ['geoip', 'geoip'],
         ['admin_groups.cfg', 'admin_groups.cfg'],
@@ -55,7 +56,8 @@ sourcemod:
         ['maplists.cfg', 'maplists.cfg'],
         ['sourceirc_surf.cfg', 'sourceirc.cfg'],
         ['sourcepunish_surf.cfg', 'sourcepunish.cfg'],
-        ['advertisements_surf.txt', 'advertisements.txt']
+        ['advertisements_surf.txt', 'advertisements.txt'],
+        ['serverhop.cfg', 'serverhop.cfg']
     ]
     extensions:
         - socket
