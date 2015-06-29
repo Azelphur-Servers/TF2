@@ -14,8 +14,8 @@ def mkdir(path):
         os.makedirs(folder)
 
 
-def do_update(thing):
-    for path in config[thing]['update']:
+def include(thing):
+    for path in config[thing]['include']:
         mkdir(os.path.abspath(os.path.join('build', path)))
         os.rename(os.path.join(thing, path), os.path.join('build', path))
 
@@ -51,7 +51,7 @@ for thing in ['metamod', 'sourcemod']:
 
     subprocess.call(['tar', 'zxf', thing+'.tar.gz', '-C', thing])
 
-    do_update(thing)
+    do_include(thing)
 
 os.mkdir('build/addons/sourcemod/plugins')
 
