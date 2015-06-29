@@ -14,7 +14,7 @@ def mkdir(path):
         os.makedirs(folder)
 
 
-def include(thing):
+def do_include(thing):
     for path in config[thing]['include']:
         mkdir(os.path.abspath(os.path.join('build', path)))
         os.rename(os.path.join(thing, path), os.path.join('build', path))
