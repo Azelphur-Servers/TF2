@@ -1,0 +1,39 @@
+"rules"
+{
+    "Url" "http://game.azelphur.com/rules/ingame/tf2/"
+    "Title" "Server Rules"
+    "Hook" "!rules"
+    "Hook" "/rules"
+}
+
+"motd"
+{
+    "Url" "http://game.azelphur.com/rules/ingame/tf2/"
+    "Title" "Server MOTD"
+    "Hook" "!motd"
+    "Hook" "/motd"
+}
+
+"donate"
+{
+    "Url" "http://game.azelphur.com/donate/ingame/tf2/"
+    "Title" "Donate To Azelphur Servers"
+    "Hook" "!donate"
+    "Hook" "/donate"
+}
+
+"news"
+{
+    "Url" "http://game.azelphur.com/news/ingame/tf2/"
+    "Title" "news"
+    "Hook" "!news"
+    "Hook" "/news"
+}
+
+"howtosurf"
+{
+    "Url" "http://game.azelphur.com/howtosurf/ingame/tf2/"
+    "Title" "How To Surf"
+    "Hook" "!howtosurf"
+    "Hook" "/howtosurf"
+}

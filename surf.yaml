@@ -39,6 +39,7 @@ sourcemod:
         - hlstats
         - psyrtd
         - TF2-Premium
+        - premium_thirdperson
         - serverhop
         - TF2_Respawn
         - SprayManager
@@ -46,6 +47,8 @@ sourcemod:
         - backpack
         - radio
         - godmode-remove
+        - WebShortcuts
+        - motdgd_adverts
     # List of SourceMod config files
     # These are config files that will reside in /addons/sourcemod/configs
     # and NOT for configs that will reside in /cfg/
