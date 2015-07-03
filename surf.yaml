@@ -41,6 +41,7 @@ sourcemod:
         - TF2-Premium
         - serverhop
         - TF2_Respawn
+        - SprayManager
         - spamlessslap
         - backpack
         - radio
@@ -76,6 +77,7 @@ sourcemod:
     # Note that all default SourceMod extensions are installed by default.
     extensions:
         - socket
+        - csteamid
 
 metamod:
     # URL to grab MetaMod from, this allows us to change version or use a custom build.
