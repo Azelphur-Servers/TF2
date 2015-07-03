@@ -1,0 +1,51 @@
+"Phrases"
+{
+	"Welcome"
+	{
+		"#format"	"{1:s}"
+		"en"		"Welcome {1}, this server is running SourceMod Radio"
+		"de"		"Willkommen {1}, auf diesem Server lдuft SourceMod Radio"
+		"ru"		"Добро пожаловать {1}, на этом сервере есть SourceMod Radio"
+        "fr"		"Bienvenue {1}, SourceMod Radio est disponible sur ce serveur"
+        "it"        "Benvenuto {1} , questo server sta utilizzando SourceMod Radio"
+        "es"		"Bienvenido {1}, este servidor está ejecutando SourceMod Radio"
+	}
+	"Radio Command Info"
+	{
+		"en"		"Type in chat !radio to bring up the radio menu, or !radiooff to switch the radio off"
+		"de"		"Tippe im Chat !radio um das Radiomenь vorzubringen oder !radiooff um das Radio auszuschalten"
+		"ru"		"Напишите в чате !radio для открытия меню станций, или !radiooff для отключения радио"
+        "fr"		"Tape !radio dans le t'chat pour ouvrir le menu de la radio, si tu ne veux plus l'écouter tape !radiooff"
+        "it"        "Scrivi in chat !radio per aprire il menà della Radio, o !radiooff per spegnere la Radio"
+        "es"		"Escribe !radio en el chat para mostrar el menú de la radio o !radiooff para apagar la radio"
+	}
+	"Stations Menu Title"
+	{
+		"en"		"Please select a radio station"
+		"de"		"Bitte wдhle eine Radiostation"
+		"ru"		"Пожалуйста, выберете радиостанцию"
+        "fr"		"Choisis une station de radio s'il te plaît"
+        "it"        "Per favore, scegli una stazione Radio"
+        "es"		"Por favor, seleccione una emisora de radio"
+	}
+	"Started Listening"
+	{
+		"#format"	"{1:s},{2:s}"
+		"en"		"{1} started listening to {2}"
+		"de"		"{1} hцrt jetzt {2}"
+		"ru"		"{1} начал слушать {2}"
+        "fr"		"{1} écoute {2}"
+        "it"        "{1} ha iniziato ad ascoltare {2}"
+        "es"		"{1} empezó a escuchar {2}"
+	}
+	"Stopped Listening"
+	{
+		"#format"	"{1:s}"
+		"en"		"{1} stopped listening to the radio"
+		"de"		"{1} hцrte auf Radio zu hцren"
+		"ru"		"{1} закончил прослушивание радио"
+        "fr"		"{1} arrête d'écouter la radio"
+        "it"        "{1} ha smesso di ascoltare la Radio"
+        "es"		"{1} dejó de escuchar la radio"
+	}
+}
