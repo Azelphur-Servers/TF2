@@ -82,12 +82,13 @@ for plugin in config['sourcemod']['plugins']:
 
     f = os.path.join('sourcemod_plugins/', plugin)
     if os.path.exists(f) and os.path.isdir(f):
-        if os.path.exists(os.path.join(f, 'translations')):
-            for t in os.listdir(os.path.join(f, 'translations')):
-                shutil.copy(
-                    os.path.join(f, 'translations', t),
-                    os.path.join('build/addons/sourcemod/translations/', t)
-                )
+        for folder in ['translations', 'gamedata', 'configs']:
+            if os.path.exists(os.path.join(f, folder)):
+                for t in os.listdir(os.path.join(f, folder)):
+                    shutil.copy(
+                        os.path.join(f, folder, t),
+                        os.path.join('build/addons/sourcemod/', folder, t)
+                    )
         for root, dirs, files in os.walk(os.path.join(f, 'scripting')):
             for name in files:
                 if name[-3:] == '.sp':
@@ -104,8 +105,6 @@ for extension in config['sourcemod']['extensions']:
                 os.path.join(f, 'extensions', e),
                 os.path.join('build/addons/sourcemod/extensions/', e)
             )
-
-os.mkdir('build/addons/sourcemod/configs')
 
 for src, dst in config['sourcemod']['configs']:
     f = os.path.join('sourcemod_configs', src)

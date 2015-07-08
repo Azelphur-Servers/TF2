@@ -7,6 +7,7 @@ sourcemod:
         - addons/sourcemod/extensions
         - addons/sourcemod/gamedata
         - addons/sourcemod/translations
+        - addons/sourcemod/configs
         - addons/metamod/sourcemod.vdf
     # List of plugins to install, minus file extension (eg basechat but NOT basechat.smx)
     # Plugins will be searched for in...
