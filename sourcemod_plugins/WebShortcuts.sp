@@ -14,7 +14,7 @@ public Plugin:myinfo =
     url			=		"http://SourceMod.net"
 };
 
-enum _:States {
+enum States {
 	Game_TF2 = (1<<0),
 	Game_L4D = (1<<1),
 	Big_MOTD = (1<<8)
@@ -22,7 +22,7 @@ enum _:States {
 
 new g_iGameMode;
 
-enum _:FieldCheckFlags
+enum FieldCheckFlags
 {
 	Flag_Steam_ID			=	(1<<0),
 	Flag_User_ID			=	(1<<1),

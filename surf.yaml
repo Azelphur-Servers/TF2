@@ -79,7 +79,8 @@ sourcemod:
         ['advertisements_surf.txt', 'advertisements.txt'],
         ['serverhop.cfg', 'serverhop.cfg'],
         ['premium_surf.cfg', 'premium.cfg'],
-        ['particles.cfg', 'particles.cfg']
+        ['particles.cfg', 'particles.cfg'],
+        ['Webshortcuts.txt', 'Webshortcuts.txt']
     ]
     # List of SourceMod extensions
     # These will be searched for in the sourcemod_extensions directory
