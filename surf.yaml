@@ -90,6 +90,7 @@ sourcemod:
     extensions:
         - socket
         - csteamid
+        - connect
 
 metamod:
     # URL to grab MetaMod from, this allows us to change version or use a custom build.
