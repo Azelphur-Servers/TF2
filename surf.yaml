@@ -110,5 +110,6 @@ configs: [
     ['sourcemod/afk_manager.cfg', 'sourcemod/afk_manager.cfg'],
     ['sourcemod/sourcemod.cfg', 'sourcemod/sourcemod.cfg'],
     ['sourcemod/plugin.radio.cfg', 'sourcemod/plugin.radio.cfg'],
+    ['sourcemod/plugin.motdgd_adverts.cfg', 'sourcemod/plugin.motdgd_adverts.cfg'],
     ['sourcemod/radiostations.ini', 'sourcemod/radiostations.ini']
 ]
