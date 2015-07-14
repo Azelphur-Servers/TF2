@@ -35,6 +35,7 @@ sourcemod:
         - SourceIRC
         - afk_manager
         - SourcePunish
+        - sourceirc-ticket
         - addcond
         - advertisements
         - buttons
