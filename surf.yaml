@@ -106,7 +106,7 @@ metamod:
 # The syntax is source, destination. This allows us to have
 # One config file shared between one or more servers.
 configs: [
-    ['server_surf.cfg', 'sourcemod/server_surf.cfg'],
+    ['server_surf.cfg', 'server_surf.cfg'],
     ['sourcemod/afk_manager.cfg', 'sourcemod/afk_manager.cfg'],
     ['sourcemod/sourcemod.cfg', 'sourcemod/sourcemod.cfg'],
     ['sourcemod/plugin.radio.cfg', 'sourcemod/plugin.radio.cfg'],
