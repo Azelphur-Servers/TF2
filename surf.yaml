@@ -21,7 +21,6 @@ sourcemod:
         - adminmenu
         - antiflood
         - basechat
-        - basecomm
         - basecommands
         - basetriggers
         - basevotes
