@@ -129,3 +129,11 @@ for src, dst in config['configs']:
             shutil.copytree(f, os.path.join('build/cfg/', dst))
         else:
             shutil.copy(f, os.path.join('build/cfg/', dst))
+
+os.mkdir('build/maps')
+
+for map_file in config['maps']:
+    shutil.copy(
+        os.path.join('maps', map_file),
+        'build/maps/'
+    )

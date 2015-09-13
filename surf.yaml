@@ -101,6 +101,9 @@ metamod:
     include:
         - addons/
 
+maps:
+    - surf_legendary_lite_fix_v3.bsp
+
 # List of config files
 # These are config files that will reside in /cfg/
 # and NOT for configs that will reside in /addons/sourcemod/configs/
