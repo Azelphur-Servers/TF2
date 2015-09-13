@@ -85,10 +85,16 @@ for plugin in config['sourcemod']['plugins']:
         for folder in ['extensions', 'translations', 'gamedata', 'configs']:
             if os.path.exists(os.path.join(f, folder)):
                 for t in os.listdir(os.path.join(f, folder)):
-                    shutil.copy(
-                        os.path.join(f, folder, t),
-                        os.path.join('build/addons/sourcemod/', folder, t)
-                    )
+                    if os.path.isdir(os.path.join(f, folder, t)):
+                        shutil.copytree(
+                            os.path.join(f, folder, t),
+                            os.path.join('build/addons/sourcemod/', folder, t)
+                        )
+                    else:
+                        shutil.copy(
+                            os.path.join(f, folder, t),
+                            os.path.join('build/addons/sourcemod/', folder, t)
+                        )
         for root, dirs, files in os.walk(os.path.join(f, 'scripting')):
             for name in files:
                 if name[-3:] == '.sp':
