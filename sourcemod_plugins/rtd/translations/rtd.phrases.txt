@@ -1,0 +1,397 @@
+"Phrases"
+{
+	"RTD_Disabled"
+	{
+		"en"				"This server has disabled Roll the Dice at this time."
+	}
+	"RTD_Effects_Title"
+	{
+		"en"				"Roll the Dice: Effects\nClick for a description:"
+	}
+	"RTD_Access_Denied"
+	{
+		"en"				"Opps! You are not allowed to do that."
+	}
+	"RTD_InRoll"
+	{
+		"en"				"You're already rolling the dice!"
+	}
+	"RTD_Wait"
+	{
+		"#format"			"{1:c},{2:d},{3:c}"
+		"en"				"You must wait {1}{2}{3} second(s)."
+	}
+	"RTD_Alive"
+	{
+		"en"				"You must be alive to roll the dice."
+	}
+	"RTD_Busy_Mode1"
+	{
+		"#format"			"{1:s},{2:N},{3:c}"
+		"en"				"{1}{2}{3} is using roll the dice."
+	}
+	"RTD_Busy_Mode2"
+	{
+		"en"				"Too many players on your team are using roll the dice."
+	}
+	"RTD_No_Effects"
+	{
+		"en"				"Too many commands have been disabled. Remove some commands from the cvar: sm_rtd_disabled."
+	}
+	"RTD_Effect"
+	{
+		"#format"			"{1:s},{2:N},{3:c},{4:s},{5:s},{6:c}"
+		"en"				"{1}{2}{3} rolled: {4}{5}{6}."
+	}
+	"RTD_Effect_Time"
+	{
+		"#format"			"{1:s},{2:N},{3:c},{4:s},{5:s},{6:c},{7:s},{8:d},{9:c}"
+		"en"				"{1}{2}{3} rolled: {4}{5}{6} for {7}{8}{9} seconds."
+	}
+	"RTD_Effect_End"
+	{
+		"#format"			"{1:s},{2:N},{3:c}"
+		"en"				"{1}{2}{3}'s effect has worn off."
+	}
+	"RTD_Died"
+	{
+		"#format"			"{1:s},{2:N},{3:c}"
+		"en"				"{1}{2}{3} died during their roll."
+	}
+	"RTD_Respawn"
+	{
+		"#format"			"{1:s},{2:N},{3:c}"
+		"en"				"{1}{2}{3} respawned during their roll."
+	}
+	"RTD_Disconnected"
+	{
+		"#format"			"{1:s},{2:N},{3:c}"
+		"en"				"{1}{2}{3} disconnected during their roll."
+	}
+	"RTD_Health"
+	{
+		"#format"			"{1:s},{2:d},{3:c}"
+		"en"				"You now have: {1}{2}{3} HP!"
+	}
+	"RTD_Stuck"
+	{
+		"en"				"You were respawned because you were stuck."
+	}
+	"RTD_Timebomb"
+	{
+		"#format"			"{1:d},{2:N}"
+		"en"				"{1} seconds until {2} explodes."
+	}
+	"RTD_Timebomb_Result"
+	{
+		"#format"			"{1:s},{2:N},{3:c},{4:s},{5:d},{6:c}"
+		"en"				"{1}{2}{3} damage: {4}{5}{6}."
+	}
+	"RTD_NotInRound"
+	{
+		"en"				"Wait for the round to start."
+	}
+	"RTD_NoTargets"
+	{
+		"en"				"No valid targets available."
+	}
+	"RTD_Advert1"
+	{
+		"#format"			"{1:s},{2:c}"
+		"en"				"Type {1}rtd{2} to roll for random effects."
+	}
+	"RTD_Advert2"
+	{
+		"#format"			"{1:s},{2:c}"
+		"en"				"Dice mod is running! Type {1}effects{2} to learn more."
+	}
+	"#godmode"
+	{
+		"en"				"godmode"
+	}
+	"#godmode_desc"
+	{
+		"en"				"Invulnerability to bullets, falling, and map traps."
+	}
+	"#toxic"
+	{
+		"en"				"toxic"
+	}
+	"#toxic_desc"
+	{
+		"en"				"Your horrible breath kills anyone near you."
+	}
+	"#buffed_health"
+	{
+		"en"				"lucky sandvich"
+	}
+	"#buffed_health_desc"
+	{
+		"en"				"An instant health boost and the next shot will be a crit. Good luck!"
+	}
+	"#increased_speed"
+	{
+		"en"				"faster speed"
+	}
+	"#increased_speed_desc"
+	{
+		"en"				"Ever wanted to go faster? Be gone like the wind!"
+	}
+	"#noclip"
+	{
+		"en"				"noclip"
+	}
+	"#noclip_desc"
+	{
+		"en"				"Fly through and walls and terrorize the other team."
+	}
+	"#low_gravity"
+	{
+		"en"				"low gravity"
+	}
+	"#low_gravity_desc"
+	{
+		"en"				"Lower gravity than everyone else. Play Blue Danube during this effect."
+	}
+	"#uber"
+	{
+		"en"				"unlimited uber"
+	}
+	"#uber_desc"
+	{
+		"en"				"A couple seconds of uber to show the other team who's boss."
+	}
+	"#invis"
+	{
+		"en"				"invisibility"
+	}
+	"#invis_desc"
+	{
+		"en"				"Now you see me - now you don't. Go invisible - even to sentries!"
+	}
+	"#cloak"
+	{
+		"en"				"infinite cloak"
+	}
+	"#cloak_desc"
+	{
+		"en"				"Your spy watch won't run out for the duration of this effect."
+	}
+	"#crits"
+	{
+		"en"				"crits"
+	}
+	"#crits_desc"
+	{
+		"en"				"Constant crits without the requirement of hacks!"
+	}
+	"#infinite_ammo"
+	{
+		"en"				"infinite ammo"
+	}
+	"#infinite_ammo_desc"
+	{
+		"en"				"No need to reload - we've got you covered!"
+	}
+	"#scary_bullets"
+	{
+		"en"				"scary bullets"
+	}
+	"#scary_bullets_desc"
+	{
+		"en"				"Any players you hurt become scared like tiny babies."
+	}
+	"#sentry"
+	{
+		"en"				"instant sentry"
+	}
+	"#sentry_desc"
+	{
+		"en"				"Point at a spot and call for a medic to spawn a sentry."
+	}
+	"RTD_Building_Placement"
+	{
+		"en"				"You cannot build in that spot."
+	}
+	"#homing"
+	{
+		"en"				"homing projectiles"
+	}
+	"#homing_desc"
+	{
+		"en"				"Rockets/arrows/flares will fly at enemies to save the bother the aiming."
+	}
+	"#charge"
+	{
+		"en"				"instant charge"
+	}
+	"#charge_desc"
+	{
+		"en"				"Your sniper rifle and bow charge up instantly."
+	}
+	"#explode"
+	{
+		"en"				"explode"
+	}
+	"#explode_desc"
+	{
+		"en"				"Sorry, you exploded where you stood. Just bad luck."
+	}
+	"#snail"
+	{
+		"en"				"snail"
+	}
+	"#snail_desc"
+	{
+		"en"				"Your move speed is slowed. Might win in a race against a cozy camper sniper."
+	}
+	"#freeze"
+	{
+		"en"				"frozen"
+	}
+	"#freeze_desc"
+	{
+		"en"				"All movement is frozen and you become an ice sculpture."
+	}
+	"#timebomb"
+	{
+		"en"				"timebomb"
+	}
+	"#timebomb_desc"
+	{
+		"en"				"You have seconds to live. Run towards the other team to deal damage when you die."
+	}
+	"#ignite"
+	{
+		"en"				"spontaneous combustion"
+	}
+	"#ignite_desc"
+	{
+		"en"				"Surprise, you're on fire!"
+	}
+	"#low_health"
+	{
+		"en"				"low health"
+	}
+	"#low_health_desc"
+	{
+		"en"				"All your health is gone. Where did it go?"
+	}
+	"#drug"
+	{
+		"en"				"drugged"
+	}
+	"#drug_desc"
+	{
+		"en"				"Flashes of color and tilted vision overtake your screen to distract you."
+	}
+	"#blind"
+	{
+		"en"				"blind"
+	}
+	"#blind_desc"
+	{
+		"en"				"Who turned the lights out?"
+	}
+	"#melee"
+	{
+		"en"				"stripped to melee"
+	}
+	"#melee_desc"
+	{
+		"en"				"You lose your primary and secondary weapons."
+	}
+	"#beacon"
+	{
+		"en"				"beacon"
+	}
+	"#beacon_desc"
+	{
+		"en"				"An energy ring and pinging sound let the enemy know where you are."
+	}
+	"#taunt"
+	{
+		"en"				"forced taunt"
+	}
+	"#taunt_desc"
+	{
+		"en"				"You can't stop taunting."
+	}
+	"#nostalgia"
+	{
+		"en"				"nostalgia"
+	}
+	"#nostalgia_desc"
+	{
+		"en"				"Just like the good ol' days!"
+	}
+	"#earthquake"
+	{
+		"en"				"earthquake"
+	}
+	"#earthquake_desc"
+	{
+		"en"				"A rumble shakes your screen and affects those around you."
+	}
+	"#funny_feeling"
+	{
+		"en"				"funny feeling"
+	}
+	"#funny_feeling_desc"
+	{
+		"en"				"Increases your FOV to 160. Woooah.."
+	}
+	"#sauce"
+	{
+		"en"				"mystery sauce"
+	}
+	"#sauce_desc"
+	{
+		"en"				"You are covered in jarate and milk and bleeding out."
+	}
+	"#dispenser"
+	{
+		"en"				"dispenser pop-up"
+	}
+	"#dispenser_desc"
+	{
+		"en"				"Point at a spot and call for a medic to spawn a dispenser."
+	}
+	"RTD_Building_Limit"
+	{
+		"#format"			"{1:d},{2:d}"
+		"en"				"You've built {1}/{2} building(s)."
+	}
+	"#jump"
+	{
+		"en"				"infinite double jumps"
+	}
+	"#jump_desc"
+	{
+		"en"				"Play a little game of the floor is lava and double jump without restrictions."
+	}
+	"#instant_kills"
+	{
+		"en"				"instant kills"
+	}
+	"#instant_kills_desc"
+	{
+		"en"				"Any damage you deal automatically kills your victim!"
+	}
+	"#bighead"
+	{
+		"en"				"big head"
+	}
+	"#bighead_desc"
+	{
+		"en"				"Your head grew in size. This lowers your voice pitch as well."
+	}
+	"#tinyplayer"
+	{
+		"en"				"player shrink"
+	}
+	"#tinyplayer_desc"
+	{
+		"en"				"You have shrunk! Use this advantage to sneak past the enemy."
+	}
+}
