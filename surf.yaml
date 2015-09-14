@@ -84,7 +84,7 @@ sourcemod:
         ['serverhop.cfg', 'serverhop.cfg'],
         ['premium_surf.cfg', 'premium.cfg'],
         ['particles.cfg', 'particles.cfg'],
-        ['Webshortcuts.txt', 'Webshortcuts.txt']
+        ['Webshortcuts.txt', 'Webshortcuts.txt'],
         ['rtd_effects.cfg', 'rtd_effects.cfg']
     ]
     # List of SourceMod extensions
