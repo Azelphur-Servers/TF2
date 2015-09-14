@@ -39,7 +39,6 @@ sourcemod:
         - advertisements
         - buttons
         - hlstats
-        - psyrtd
         - TF2-Premium
         - premium_thirdperson
         - serverhop
@@ -56,6 +55,7 @@ sourcemod:
         - killer
         - donor-users
         - SMAC
+        - rtd
     # List of SourceMod config files
     # These are config files that will reside in /addons/sourcemod/configs
     # and NOT for configs that will reside in /cfg/
@@ -85,6 +85,7 @@ sourcemod:
         ['premium_surf.cfg', 'premium.cfg'],
         ['particles.cfg', 'particles.cfg'],
         ['Webshortcuts.txt', 'Webshortcuts.txt']
+        ['rtd_effects.cfg', 'rtd_effects.cfg']
     ]
     # List of SourceMod extensions
     # These will be searched for in the sourcemod_extensions directory
