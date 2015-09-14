@@ -102,9 +102,15 @@ metamod:
         - addons/
 
 maps:
-    - surf_legendary_lite_fix_v3.bsp
     - surf_10x_reload_tf2_fix_v1.bsp
     - surf_akai_f1n4l_doorfix.bsp
+    - surf_legendary_lite_fix_v3.bsp
+    - surf_rebound_v1.bsp
+    - surf_swamp_v1c.bsp
+    - surf_telstar_b4.bsp
+    - surf_tensile.bsp
+    - surf_tf_thriller_v2_fix.bsp
+    - surf_utopia_v3.bsp
 
 # List of config files
 # These are config files that will reside in /cfg/
