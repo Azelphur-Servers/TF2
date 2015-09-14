@@ -104,6 +104,7 @@ metamod:
 maps:
     - surf_legendary_lite_fix_v3.bsp
     - surf_10x_reload_tf2_fix_v1.bsp
+    - surf_akai_f1n4l_doorfix.bsp
 
 # List of config files
 # These are config files that will reside in /cfg/
