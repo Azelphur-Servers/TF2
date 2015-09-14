@@ -365,7 +365,7 @@ public OnPluginStart()
 		}
 	}
 	
-	AddNormalSoundHook(NormalSoundHook);
+	AddNormalSoundHook(NormalSHook:NormalSoundHook);
 	g_FadeUserMsgId = GetUserMessageId("Fade");
 }
 
