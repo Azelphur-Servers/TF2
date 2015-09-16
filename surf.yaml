@@ -56,6 +56,8 @@ sourcemod:
         - donor-users
         - SMAC
         - rtd
+        - ItemMessages
+        - rtrigs
     # List of SourceMod config files
     # These are config files that will reside in /addons/sourcemod/configs
     # and NOT for configs that will reside in /cfg/
