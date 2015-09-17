@@ -7,3 +7,6 @@
 [submodule "sourcemod_plugins/TF2-Premium"]
 	path = sourcemod_plugins/TF2-Premium
 	url = https://github.com/Azelphur/TF2-Premium.git
+[submodule "sourcemod_plugins/SprayManager"]
+	path = sourcemod_plugins/SprayManager
+	url = https://github.com/MonsterKiller/SprayManager.git
