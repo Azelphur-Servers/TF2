@@ -39,6 +39,8 @@ def sourcemod_build(f):
 with open('surf.yaml', 'r') as stream:
     config = yaml.load(stream)
 
+if os.path.exists('build/addons'):
+    shutil.rmtree('build/addons')
 
 for thing in ['metamod', 'sourcemod']:
     if not os.path.exists(thing+'.tar.gz'):
@@ -125,6 +127,8 @@ for src, dst in config['sourcemod']['configs']:
         os.rename(f, os.path.join('build/addons/sourcemod/configs/', dst))
 
 
+if os.path.exists('build/cfg'):
+    shutil.rmtree('build/cfg')
 os.mkdir('build/cfg')
 
 for src, dst in config['configs']:
@@ -136,10 +140,19 @@ for src, dst in config['configs']:
         else:
             shutil.copy(f, os.path.join('build/cfg/', dst))
 
-os.mkdir('build/maps')
+if not os.path.exists('build/maps'):
+    os.mkdir('build/maps')
+os.chdir('build/maps')
 
-for map_file in config['maps']:
-    shutil.copy(
-        os.path.join('maps', map_file),
-        'build/maps/'
-    )
+for map_url in config['maps']:
+    file_name = map_url[map_url.rfind('/')+1:]
+    if os.path.exists(file_name):
+        continue
+    r = subprocess.call(['wget', map_url])
+    if r:
+        print 'Failed to download', map_url
+    file_name = map_url[map_url.rfind('/')+1:]
+    subprocess.call(['bzip2', '-dk', file_name])
+    if r:
+        print 'Failed to decompress', map_url
+    

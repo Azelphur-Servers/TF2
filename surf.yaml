@@ -105,56 +105,7 @@ metamod:
         - addons/
 
 maps:
-    - surf_10x_reload_tf2_fix_v1.bsp
-    - surf_akai_f1n4l_doorfix.bsp
-    - surf_legendary_lite_fix_v3.bsp
-    - surf_rebound_v1.bsp
-    - surf_swamp_v1c.bsp
-    - surf_telstar_b4.bsp
-    - surf_tensile.bsp
-    - surf_tf_thriller_v2_fix.bsp
-    - surf_utopia_v3.bsp
-    - surf_abhorrence_v2.bsp
-    - surf_ag_texture_final.bsp
-    - surf_apotheosis_v2.bsp
-    - surf_aurantia-grisea.bsp
-    - surf_badlands_r1.bsp
-    - surf_bathroom_final.bsp
-    - surf_blackout_v_2.bsp
-    - surf_bluetowers_v5f.bsp
-    - surf_codeprotected_v2_fix.bsp
-    - surf_complex_b2.bsp
-    - surf_congo_black.bsp
-    - surf_crzyfrog_reloaded.bsp
-    - surf_dm_japan_v2_b8.bsp
-    - surf_fastspiral_retro_tf2.bsp
-    - surf_gforce.bsp
-    - surf_greatfissure.bsp
-    - surf_hang_time_reloaded_v2.bsp
-    - surf_horizon_v3.bsp
-    - surf_koth_air_arena_v4.bsp
-    - surf_lament_n2p.bsp
-    - surf_lullaby_vc.bsp
-    - surf_machine_remix_v2.bsp
-    - surf_monsterween_v2.bsp
-    - surf_ny_resist_t30.bsp
-    - surf_overcast_v1.bsp
-    - surf_pox.bsp
-    - surf_prelude_b3p.bsp
-    - surf_prime_time.bsp
-    - surf_pulse_v2.bsp
-    - surf_rainbow_v1.bsp
-    - surf_reanimation_v1.bsp
-    - surf_tf_rebel_resistance.bsp
-    - surf_snow_arena_v3.bsp
-    - surf_tf_thriller_v2_fix.bsp
-    - surf_the_gloaming_v2.bsp
-    - surf_toast_redone_v2.bsp
-    - surf_torrent_v1b.bsp
-    - surf_twilight_rc2.bsp
-    - surf_venice_v1e.bsp
-    - surf_wavelength_v2.bsp
-    - surf_year3000.bsp
+    - http://files.azelphur.com/tf2/surf/fastdl/maps/surf_10x_reload_tf2_fix_v1.bsp.bz2
 
 # List of config files
 # These are config files that will reside in /cfg/
