@@ -83,7 +83,7 @@ sourcemod:
         ['sourceirc_surf.cfg', 'sourceirc.cfg'],
         ['sourcepunish_surf.cfg', 'sourcepunish.cfg'],
         ['advertisements_surf.txt', 'advertisements.txt'],
-        ['serverhop.cfg', 'serverhop.cfg'],
+        ['serverhop_surf.cfg', 'serverhop.cfg'],
         ['premium_surf.cfg', 'premium.cfg'],
         ['particles.cfg', 'particles.cfg'],
         ['Webshortcuts.txt', 'Webshortcuts.txt'],
