@@ -1,0 +1,116 @@
+sourcemod:
+    # URL to grab SourceMod from, this allows us to change version or use a custom build.
+    url: http://www.sourcemod.net/smdrop/1.8/sourcemod-1.8.0-git5483-linux.tar.gz
+    # Only these files/folders will be copied from the sourcemod download into our server build
+    include:
+        - addons/sourcemod/bin
+        - addons/sourcemod/extensions
+        - addons/sourcemod/gamedata
+        - addons/sourcemod/translations
+        - addons/sourcemod/configs
+        - addons/metamod/sourcemod.vdf
+    # List of plugins to install, minus file extension (eg basechat but NOT basechat.smx)
+    # Plugins will be searched for in...
+    # Default sourcemod plugins, eg sourcemod/plugins/
+    # Disabled default sourcemod plugins, eg sourcemod/plugins/disabled
+    # .sp and folders in sourcemod_plugins.
+    plugins:
+        - admin-sql-prefetch
+        - sql-admin-manager
+        - adminhelp
+        - adminmenu
+        - antiflood
+        - basechat
+        - basecommands
+        - basetriggers
+        - basevotes
+        - clientprefs
+        - funcommands
+        - funvotes
+        - nextmap
+        - playercommands
+        - reservedslots
+        - sounds
+        - SourceIRC
+        - afk_manager
+        - SourcePunish
+        - sourceirc-ticket
+        - addcond
+        - advertisements
+        - hlstats
+        - TF2-Premium
+        - premium_thirdperson
+        - serverhop
+        - TF2_Respawn
+        - SprayManager
+        - backpack
+        - radio
+        - WebShortcuts
+        - motdgd_adverts
+        - preconnect_reserves
+        - screamer
+        - killer
+        - donor-users
+        - SMAC
+        - ItemMessages
+    # List of SourceMod config files
+    # These are config files that will reside in /addons/sourcemod/configs
+    # and NOT for configs that will reside in /cfg/
+    # Config files will be searched for in sourcemod_configs first
+    # then in sourcemod/configs if nothing exists.
+    # The syntax is source, destination. This allows us to have
+    # One config file shared between one or more servers.
+    configs: [
+        ['geoip', 'geoip'],
+        ['admin_groups.cfg', 'admin_groups.cfg'],
+        ['admin_levels.cfg', 'admin_levels.cfg'],
+        ['adminmenu_cfgs.txt', 'adminmenu_cfgs.txt'],
+        ['adminmenu_custom.txt', 'adminmenu_custom.txt'],
+        ['adminmenu_grouping.txt', 'adminmenu_grouping.txt'],
+        ['adminmenu_sorting.cfg', 'adminmenu_sorting.cfg'],
+        ['admin_overrides.cfg', 'admin_overrides.cfg'],
+        ['admins.cfg', 'admins.cfg'],
+        ['banreasons.txt', 'banreasons.txt'],
+        ['core.cfg', 'core.cfg'],
+        ['databases.cfg', 'databases.cfg'],
+        ['languages.cfg', 'languages.cfg'],
+        ['maplists.cfg', 'maplists.cfg'],
+        ['sourceirc_twofort.cfg', 'sourceirc.cfg'],
+        ['sourcepunish_twofort.cfg', 'sourcepunish.cfg'],
+        ['advertisements_twofort.txt', 'advertisements.txt'],
+        ['serverhop_twofort.cfg', 'serverhop.cfg'],
+        ['premium_twofort.cfg', 'premium.cfg'],
+        ['particles.cfg', 'particles.cfg'],
+        ['Webshortcuts.txt', 'Webshortcuts.txt']
+    ]
+    # List of SourceMod extensions
+    # These will be searched for in the sourcemod_extensions directory
+    # Note that all default SourceMod extensions are installed by default.
+    extensions:
+        - socket
+        - csteamid
+        - connect
+
+metamod:
+    # URL to grab MetaMod from, this allows us to change version or use a custom build.
+    url: http://www.metamodsource.net/mmsdrop/1.11/mmsource-1.11.0-git985-linux.tar.gz
+    # Only these files/folders will be copied from the metamod download into our server build
+    include:
+        - addons/
+
+maps:
+
+# List of config files
+# These are config files that will reside in /cfg/
+# and NOT for configs that will reside in /addons/sourcemod/configs/
+# Config files will be searched for in the cfg folder
+# The syntax is source, destination. This allows us to have
+# One config file shared between one or more servers.
+configs: [
+    ['server_twofort.cfg', 'server_twofort.cfg'],
+    ['sourcemod/afk_manager.cfg', 'sourcemod/afk_manager.cfg'],
+    ['sourcemod/sourcemod.cfg', 'sourcemod/sourcemod.cfg'],
+    ['sourcemod/plugin.radio.cfg', 'sourcemod/plugin.radio.cfg'],
+    ['sourcemod/plugin.motdgd_adverts.cfg', 'sourcemod/plugin.motdgd_adverts.cfg'],
+    ['sourcemod/radiostations.ini', 'sourcemod/radiostations.ini']
+]
