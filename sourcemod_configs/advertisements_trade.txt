@@ -1,0 +1,38 @@
+"Advertisements"
+{
+    "1"
+    {
+        "type"        "H"
+        "text"        "Type !radio in chat to listen to music!"
+    }
+    "2"
+    {
+        "type"        "H"
+        "text"        "Welcome to Trade.TF2.Azelphur.com, add us to your favorites!"
+    }
+    "3"
+    {
+        "type"        "H"
+        "text"        "Visit our website, Game.Azelphur.com, and have a look around!"
+    }
+    "4"
+    {
+        "type"        "H"
+        "text"        "Want cool premium benefits like being able to force a map vote, and a reserved slot? Type donate in chat to support us."
+    }
+    "5"
+    {
+        "type"        "H"
+        "text"        "Want to know the rules here? Type !rules."
+    }
+    "6"
+    {
+        "type"        "H"
+        "text"        "Is someone breaking the rules? Type /report to send the admins a report."
+    }
+    "7"
+    {
+        "type"        "H"
+        "text"        "Type !hop in chat to check out our other servers!"
+    }
+}
