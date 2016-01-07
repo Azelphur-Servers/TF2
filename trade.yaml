@@ -101,6 +101,7 @@ metamod:
         - addons/
 
 maps:
+    - https://files.azelphur.com/tf2/trade/fastdl/maps/trade_plaza.bsp.bz2
 
 # List of config files
 # These are config files that will reside in /cfg/
